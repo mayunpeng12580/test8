@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<style type="text/css">
+			.box{
+				width: 400px;
+				height: 400px;
+				background-color: red;
+				margin: 0 auto;
+				border: 5px solid black;
+			}
+			
+			
+		</style>
+		
+	</head>
+	<body>
+		<div class="box"></div>
+		
+		<script type="text/javascript">
+			var box=document.querySelector(".box")
+			var x=
+			
+			
+			
+			box.onmouseover=function(e){
+				box.style.backgroundColor="blue"
+			}
+			
+			box.onmousedown=function(e){
+				box.style.backgroundColor="yellow"
+			}
+			
+			box.onmousemove=function(e){
+				var x=e.offsetX;
+				var y=e.offsetY;
+				if(x>150&&x<350&&y<350&&y>150){
+					box.style.backgroundColor="#000000"
+				}else{
+					box.style.backgroundColor="red"
+				}
+			}
+			
+			box.onmousewheel=function(){
+				box.style.backgroundColor="deeppink";
+				box.innerText="哇哈哈！！"
+			}
+			
+			
+		</script>
+		
+		
+	</body>
+</html>
