@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script type="text/javascript" src="js/jquery-2.1.0.js">
+		</script>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				text-decoration: none;
+			}
+			
+			html {
+				height: 100%;
+				font-size: calc(100vw/7.5);
+				/*width: 100%;*/
+			}
+			
+			body {
+				/*width: 100%;*/
+				height: 100%;
+			}
+			
+			.center {
+				width: 100%;
+				height: 100%;
+				background-color: burlywood;
+				padding: 0.9rem 0 1rem;
+				box-sizing: border-box;
+				display: flex;
+			}
+			
+			.center .left {
+				width: 85px;
+				/*height: 100%;*/
+				overflow: hidden;
+				position: relative;
+			}
+			
+			.center .left dl {
+				width: 100%;
+				/*height: 100%;*/
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			
+			.center .left dl dd {
+				/*width: 100%;*/
+				/*background-color: blue;*/
+				text-align: center;
+				line-height: 0.92rem;
+				border-bottom: solid 1px #aaa;
+				font-size: 0.28rem;
+				position: relative;
+			}
+			
+			.center .left dl dd a {
+				color: white;
+			}
+			
+			.center .right {
+				flex: 1;
+				/*width: 100%;
+				height: 100%;*/
+				background-color: brown;
+				overflow: hidden;
+				position: relative;
+			}
+			
+			.top {
+				width: 100%;
+				height: 0.9rem;
+				background-color: #AAAAAA;
+				position: fixed;
+				top: 0;
+			}
+			
+			.bottom {
+				width: 100%;
+				height: 1rem;
+				background-color: #AAAAAA;
+				position: fixed;
+				bottom: 0;
+			}
+			
+			.transition {
+				-webkit-transition: top 0.3s 0s linear;
+			}
+			
+			.right dl {
+				width: 100%;
+				/*height: 100%;*/
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			
+			.right dl dd {
+				text-align: center;
+				line-height: 15rem;
+				border-bottom: solid 1px #aaa;
+				font-size: 2.28rem;
+			}
+			
+			.xian {
+				display: block;
+			}
+			
+			.mei {
+				display: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="top"></div>
+		<div class="center">
+			<div class="left">
+				<dl>
+					<dd>
+						<a href="#">热门推荐</a>
+					</dd>
+					<dd>
+						<a href="#">手机数码</a>
+					</dd>
+					<dd>
+						<a href="#">热门推荐</a>
+					</dd>
+					<dd>
+						<a href="#">手机数码</a>
+					</dd>
+					<dd>
+						<a href="#">热门推荐</a>
+					</dd>
+					<dd>
+						<a href="#">手机数码</a>
+					</dd>
+					<dd>
+						<a href="#">热门推荐</a>
+					</dd>
+					<dd>
+						<a href="#">手机数码</a>
+					</dd>
+					<dd>
+						<a href="#">热门推荐</a>
+					</dd>
+					<dd>
+						<a href="#">手机数码</a>
+					</dd>
+					<dd>
+						<a href="#">热门推荐</a>
+					</dd>
+					<dd>
+						<a href="#">手机数码</a>
+					</dd>
+					<dd>
+						<a href="#">热门推荐</a>
+					</dd>
+					<dd>
+						<a href="#">手机数码222</a>
+					</dd>
+					<dd>
+						<a href="#">热门推荐11</a>
+					</dd>
+					<dd>
+						<a href="#">手机数码333</a>
+					</dd>
+					<dd>
+						<a href="#">热门推荐999</a>
+					</dd>
+					<dd>
+						<a href="#">手机数码</a>
+					</dd>
+					<dd>
+						<a href="#">热门推荐</a>
+					</dd>
+					<dd>
+						<a href="#">手机数码</a>
+					</dd>
+					<dd>
+						<a href="#">手机数码</a>
+					</dd>
+					<dd>
+						<a href="#">热门推荐</a>
+					</dd>
+					<dd>
+						<a href="#">手机数码</a>
+					</dd>
+					<dd>
+						<a href="#">热门推荐</a>
+					</dd>
+					<dd>
+						<a href="#">手机数码</a>
+					</dd>
+					<dd>
+						<a href="#">热门推荐</a>
+					</dd>
+					<dd>
+						<a href="#">手机数码</a>
+					</dd>
+				</dl>
+			</div>
+			<div class="right">
+				<dl>
+					<dd>1</dd>
+					<dd class="mei">2</dd>
+					<dd class="mei">3</dd>
+					<dd class="mei">4</dd>
+					<dd class="mei">5</dd>
+					<dd class="mei">6</dd>
+					<dd class="mei">7</dd>
+					<dd class="mei">8</dd>
+					<dd class="mei">9</dd>
+					<dd class="mei">10</dd>
+					<dd class="mei">11</dd>
+					<dd class="mei">12</dd>
+					<dd class="mei">13</dd>
+					<dd class="mei">14</dd>
+					<dd class="mei">15</dd>
+					<dd class="mei">16</dd>
+					<dd class="mei">17</dd>
+					<dd class="mei">18</dd>
+					<dd class="mei">19</dd>
+					<dd class="mei">20</dd>
+					<dd class="mei">21</dd>
+					<dd class="mei">22</dd>
+					<dd class="mei">23</dd>
+					<dd class="mei">24</dd>
+					<dd class="mei">25</dd>
+					<dd class="mei">26</dd>
+					<dd class="mei">27</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="bottom"></div>
+
+		<script type="text/javascript">
+			var dl = document.querySelector(".left dl")
+			var left1 = document.querySelector(".left")
+			var offsettop = 0;
+			var starY = 0;
+			var limittop = left1.offsetHeight - dl.offsetHeight - 150
+			var right1 = document.querySelector(".right")
+			var rightdl = document.querySelector(".right dl")
+			var righttop = right1.offsetHeight - rightdl.offsetHeight - 150
+			var index = 0;
+
+			left1.ontouchstart = function(e) {
+				starY = e.changedTouches[0].clientY
+			}
+
+			left1.ontouchmove = function(e) {
+				var y = e.changedTouches[0].clientY;
+				var tmp = offsettop + y - starY;
+				tmp = tmp > 150 ? 150 : tmp
+				tmp = tmp < limittop ? limittop : tmp;
+
+				dl.style.top = tmp + "px"
+
+			}
+
+			left1.ontouchend = function(e) {
+				var y = e.changedTouches[0].clientY;
+				var tmp = offsettop + y - starY;
+				tmp = tmp > 0 ? 0 : tmp;
+				tmp = tmp < (limittop + 150) ? (limittop + 150) : tmp;
+				offsettop = tmp;
+				dl.style.top = offsettop + "px";
+				dl.className = "transition";
+
+			}
+
+			left1.ontouchcancel = function(e) {
+				console.log('触摸取消');
+			}
+
+			//			y=document.createAttribute("class");
+			//			y.value="xian"
+			//			rightdl.setAttributeNode(y)
+
+			$(".left dl dd").click(function() {
+				index = $(this).index();
+				console.log(index)
+				//				y=document.createAttribute("class")
+				//				y.value="xian"
+
+				$(".right dl dd").eq(index).show().siblings().hide()
+
+				if(index > 16) {
+					index = 16 * 47;
+				} else {
+					index = index * 47;
+				}
+				offsettop = index;
+				dl.style.top = -offsettop + "px";
+
+			})
+
+			right1.ontouchstart = function(e) {
+				starY = e.changedTouches[0].clientY
+			}
+
+			right1.ontouchmove = function(e) {
+				var y = e.changedTouches[0].clientY;
+				var tmp = offsettop + y - starY;
+				tmp = tmp > 150 ? 150 : tmp
+				tmp = tmp < righttop ? righttop : tmp;
+
+				rightdl.style.top = tmp + "px"
+				//					$(this).css({ "top": tmp + "px" })
+			}
+
+			right1.ontouchend = function(e) {
+				var y = e.changedTouches[0].clientY;
+				var tmp = offsettop + y - starY;
+				tmp = tmp > 0 ? 0 : tmp;
+				tmp = tmp < (righttop + 150) ? (righttop + 300) : tmp;
+				offsettop = tmp;
+				//					$(this).css({ "top": offsettop + "px" })
+				rightdl.style.top = offsettop + "px"
+
+				rightdl.className = "transition";
+			}
+
+			//
+		</script>
+	</body>
+
+</html>
