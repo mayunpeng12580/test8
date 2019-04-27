@@ -2,3 +2,5 @@
 #静态界面：https://mayunpeng12580.github.io/test8/%E4%BA%AC%E4%B8%9C
 
 #动态界面：https://mayunpeng12580.github.io/test8/%E5%8A%A8%E6%80%81%E7%95%8C%E9%9D%A2#
+
+#通知：https://mayunpeng12580.github.io/test8/%E9%80%9A%E7%9F%A5
