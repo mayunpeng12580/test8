@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				text-decoration: none;
+				list-style: none;
+			}
+			
+			.bg{
+				width: 800px;
+				height: 780px;
+				background-image: url(img/beige_paper.png);
+				margin: 15px auto;
+				padding-top: 20px;
+			}
+			
+			/*.bg li{
+				width: 600px;
+				height: 120px;
+				margin-left: 100px;
+				margin-top: 20px;
+				}*/
+			
+			
+			.bg ul li a{
+				display: block;
+				width: 600px;
+				height: 120px;
+				background-color: white;
+				margin-top: 20px;
+				margin-left: 100px;
+				overflow: hidden;
+				zoom: 1;
+				box-shadow: 5px 7px 5px 0 #5F9EA0;
+			}
+			
+			.bg ul li a img{
+				float: left;
+				width: 60px;
+				margin: 10px 30px 10px 30px;
+				animation-name: z;
+				animation-duration: 1s;
+				animation-timing-function: linear;
+				animation-iteration-count: infinite;
+				animation-fill-mode: none;
+				animation-play-state:paused;
+				/*transition-property: all;
+				transition-duration: 1s;
+				transition-timing-function: linear;*/
+			}
+			
+			.bg ul li a .th1{
+				font-family: arial;
+				font-size: 16px;
+				line-height: 30px;
+				margin-top: 25px;
+				margin-top: 15px;
+			}
+			
+			.bg ul li a .th2{
+				font-family: arial;
+				font-size:32px;
+			}
+			
+			
+			.bg li a:hover{
+				background-color:antiquewhite;
+			}
+			
+			.bg li a:hover .th1{
+				color: #C7008C;
+				font-size: 34px;
+				line-height: 50px;
+			}
+			
+			.bg li a:hover  .th2{
+				color: cadetblue;
+				font-size: 18px;
+			}
+			
+			.bg li a:hover img{
+				width: 75px;
+				margin: 2px 30px 10px 30px;
+				animation-play-state: running;
+				animation-fill-mode:backwards;
+				/*transform: scale(1.3,1.3);
+				transform: rotateZ(20deg);*/
+			}
+			
+			@keyframes z{
+				
+				0%{transform: rotateZ(0deg);}
+				25%{transform: rotateZ(45deg);}
+				75%{transform: rotateZ(-45deg);}
+				100%{transform: rotateZ(0deg);}
+			}
+			/*.bg ul li a img*/
+			/*.bg ul li a:hover img{
+				animation-play-state: running;
+			}*/
+			
+			
+				
+		</style>
+		
+		
+		
+		<div class="bg">
+			<ul>
+				<li>
+					<a href="#">
+						<img src="img/马云鹏1.png"/>
+							<p class="th1">Exceptional Service</p>
+							<p class="th2">Personalized to your needs</p>
+					</a>
+				</li>
+			
+			
+			
+				
+				<li>
+					
+					<a href="#">
+							<img src="img/马云鹏1.png"/>
+						<!--	<div class="text">-->
+								<p class="th1">Creative Storytelling</p>
+								<p class="th2">Advanced use of technology</p>
+							<!--</div>-->
+						</a>	
+					
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/马云鹏1.png"/>
+							<p class="th1">Infographical Education</p>
+							<p class="th2">Understanding visually</p>	
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/马云鹏1.png"/>
+							<p class="th1">Sophisticated Team</p>
+							<p class="th2">Professionals in action</p>	
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/马云鹏1.png"/>
+						<p class="th1">Unconditional Support</p>
+							<p class="th2">24/7 for you needs</p>	
+						
+					</a>
+				</li>
+			</ul>
+			
+			
+			
+		</div>
+	</body>
+</html>
