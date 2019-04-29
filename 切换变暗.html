@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		
+	</head>
+	<body>
+		
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				text-decoration: none;
+			}
+			
+			.box{
+				overflow: hidden;
+				zoom: 1;
+			}
+			
+			dl{
+				float: left;
+				margin: 10px;
+				border: dashed 1px red;
+				padding: 10px;
+			}
+			
+			dd{
+				line-height: 25px;
+				opacity: ;
+			}
+			
+			
+		</style>
+		
+		<div class="box">
+			<dl>
+				<dt><img src="img/16.jpg" width="100px"/></dt>
+				<dd><a href="#">256赞</a></dd>
+			</dl>
+			
+			<dl>
+				<dt><img src="img/17.jpg" width="100px"/></dt>
+				<dd><a href="#">256赞</a></dd>
+			</dl>
+			
+			<dl>
+				<dt><img src="img/18.jpg" width="100px"/></dt>
+				<dd><a href="#">256赞</a></dd>
+			</dl>
+		</div>
+		<script type="text/javascript">
+			$("dl").eq("0").mouseover(function(){
+				$("dl").eq("1").css({"opacity":"0.4"})
+				$("dl").eq("2").css({"opacity":"0.4"})
+			})
+			$("dl").eq("0").mouseout(function(){
+				$("dl").eq("1").css({"opacity":"1"})
+				$("dl").eq("2").css({"opacity":"1"})
+			})
+			
+			$("dl").eq("1").mouseover(function(){
+				$("dl").eq("0").css({"opacity":"0.4"})
+				$("dl").eq("2").css({"opacity":"0.4"})
+			})
+			$("dl").eq("1").mouseout(function(){
+				$("dl").eq("0").css({"opacity":"1"})
+				$("dl").eq("2").css({"opacity":"1"})
+			})
+			
+			$("dl").eq("2").mouseover(function(){
+				$("dl").eq("1").css({"opacity":"0.4"})
+				$("dl").eq("0").css({"opacity":"0.4"})
+			})
+			$("dl").eq("2").mouseout(function(){
+				$("dl").eq("1").css({"opacity":"1"})
+				$("dl").eq("0").css({"opacity":"1"})
+			})
+		</script>
+		
+	</body>
+</html>
